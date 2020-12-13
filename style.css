@@ -1,0 +1,17 @@
+.jumbotron {
+  margin: auto;
+  width: 50%;
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+#action {
+  margin: auto;
+  width: 50%;
+  margin-top: 3rem;
+}
+
+.cards {
+  margin-top: 3rem;
+  border: 1px solid grey;
+}

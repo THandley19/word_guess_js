@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    <title>Word Guess Game</title>
+</head>
+<body>
+    <div id="main">
+        <div class="jumbotron">
+            <h1 class="display-4">Word Guessing Game</h1>
+        </div>
+    </div>
+    <div id="action">
+        <div class="card">
+            <div class="card-header">
+               Your Word
+            </div>
+            <div class="card-body">
+                <h5 id="wordToGuess">_ _ _ _ _</h5>
+            </div>
+        </div>
+    <div class="cards">
+        <div class="card-header">
+            Wrong Guesses:
+        </div>
+        <div class="card-body">
+            <h5 id="wrongGuesses"></h5>
+        </div>
+    </div>
+<div class="cards">
+    <div class="card-header">
+        Guesses Left:
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">15</h5>
+    </div>
+</div>
+    <div class="cards">
+        <div class="card-header">
+           Games Won:
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">0</h5>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card-header">
+            Games Lost:
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">0</h5>
+        </div>
+    </div>
+    </div>
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>
