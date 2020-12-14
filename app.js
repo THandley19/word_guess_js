@@ -78,13 +78,18 @@ function startGame() {
 startGame();
 
 document.onkeypress = (e) => {
+  // stores the user's guessed letter in variable
   let userGuess = e.key;
   guessesLeft--;
+
+  // checks to see if the letter the user guessed is in the word. If it's not in the word then it adds to the word
+  // to the wrong letters arr and updates the display.
   if (!selectedWordName.includes(userGuess)) {
     wrongLetters.push(userGuess);
     document.getElementById("remainingGuesses").innerHTML = guessesLeft;
     document.getElementById("wrongGuesses").innerHTML = wrongLetters;
   } else {
+    // if the user guessed the correct letter, it will check to see if the letter is present more than once in the word.
     for (let i = 0; i < selectedWordName.length; i++) {
       if (selectedWordName[i] == userGuess) {
         blanksandSuccesses.splice(i, 1, userGuess);
@@ -95,6 +100,7 @@ document.onkeypress = (e) => {
       }
     }
   }
+  // checks if the user has lost the game by running out of guesses, or wins the game by guessing all the correct letters
   if (guessesLeft == 0) {
     alert("You lose.");
     lossCount++;
